@@ -1,5 +1,6 @@
 
-## Grad-CAM: Gradient-weighted Class Activation Mapping
+
+## NIWT: Neuron-Importance aware Weight Transfer
 
 Code for the ECCV'18 paper
 
