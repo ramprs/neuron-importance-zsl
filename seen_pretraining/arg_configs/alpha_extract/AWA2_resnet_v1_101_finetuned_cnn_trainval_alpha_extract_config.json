@@ -1,0 +1,21 @@
+{
+	"random_seed": "123",
+	"num_classes": "40",
+    "class_list_f": "../data/AWA2/classes.txt",
+	"class_idmaps_json": "../data/AWA2/AWA2_proposed_seen_idmaps.json",
+	"dataset_json": "../data/AWA2/AWA2_proposed_seen_train_split.json,../data/AWA2/AWA2_proposed_seen_val_split.json",
+	"preprocess_fn": "vgg_preprocessing",
+	"model_class": "resnet_v1",
+	"model_name": "resnet_v1_101",
+	"image_size": "224",
+	"num_workers": "10",
+	"batch_size": "64",
+	"scope": "resnet_arg_scope",
+	"bypass_name": "None",
+	"orig_ckpt_path": "../ckpt/resnet_v1_101.ckpt",
+	"ckpt_path": "../ckpt/AWA2/AWA2_resnet_cnn_seen_finetune_proposed/ckpt-144145",
+	"ckpt_list_path": "../ckpt/AWA/AWA2_resnet_v1_101_cnn_seen_finetune_proposed/",
+	"layer_name": "resnet_v1_101/block4/unit_1/bottleneck_v1",
+	"save_path": "../alphas/AWA2/AWA2_resnet_finetuned_whole_train_40_cnn_trainval_alphas_block4_unit1"
+}
+

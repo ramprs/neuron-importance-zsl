@@ -1,0 +1,19 @@
+{
+	"random_seed": "123",
+	"num_classes": "150",
+    "class_list_f": "../data/CUB/classes.txt",
+	"class_idmaps_json": "../data/CUB/CUB_200_2011_proposed_seen_idmaps.json",
+	"dataset_json": "../data/CUB/CUB_200_2011_proposed_seen_train_split.json,../data/CUB//CUB_200_2011_proposed_seen_val_split.json",
+	"preprocess_fn": "vgg_preprocessing",
+	"model_class": "resnet_v1",
+	"model_name": "resnet_v1_101",
+	"image_size": "224",
+	"num_workers": "10",
+	"batch_size": "64",
+	"scope": "resnet_arg_scope",
+	"bypass_name": "None",
+	"orig_ckpt_path": "../ckpt/CUB/resnet_v1_101.ckpt",
+	"ckpt_path": "../ckpt/CUB/CUB_resnet_cnn_seen_finetune_proposed/ckpt-20665",
+	"layer_name": "resnet_v1_101/block4/unit_1/bottleneck_v1",
+  "save_path": "../alphas/CUB/CUB_resnet_v1_101_finetuned_whole_train_150_cnn_trainval_alphas_block4_unit1"
+}

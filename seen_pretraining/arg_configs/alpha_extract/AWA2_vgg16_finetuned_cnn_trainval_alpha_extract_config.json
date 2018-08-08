@@ -1,0 +1,19 @@
+{
+	"random_seed": "123",
+	"num_classes": "40",
+	"class_list_f": "../data/AWA2/classes.txt",
+	"class_idmaps_json": "../data/AWA2/AWA2_proposed_seen_idmaps.json",
+	"dataset_json": "../data/AWA2/AWA2_proposed_seen_train_split.json,../data/AWA2/AWA2_proposed_seen_val_split.json",
+	"preprocess_fn": "vgg_preprocessing",
+	"model_class": "vgg",
+	"model_name": "vgg_16",
+	"image_size": "224",
+	"num_workers": "10",
+	"batch_size": "64",
+	"scope": "vgg_arg_scope",
+	"bypass_name": "None",
+	"orig_ckpt_path": "../ckpt/vgg_16.ckpt",
+    "ckpt_path": "../ckpt/AWA2/AWA2_vgg_16_cnn_seen_finetune_proposed/ckpt-11358",
+	"layer_name": "vgg_16/conv5/conv5_3",
+	"save_path": "../alphas/AWA2/AWA2_vgg16_finetuned_whole_train_40_cnn_trainval_alphas_conv5_3"
+}

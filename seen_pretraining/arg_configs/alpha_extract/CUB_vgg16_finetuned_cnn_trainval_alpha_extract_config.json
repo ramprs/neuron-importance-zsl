@@ -1,0 +1,19 @@
+{
+	"random_seed": "123",
+	"num_classes": "150",
+	"class_list_f": "../data/CUB/classes.txt",
+	"class_idmaps_json": "../data/CUB/CUB_200_2011_proposed_seen_idmaps.json",
+	"dataset_json": "../data/CUB/CUB_200_2011_proposed_seen_train_split.json,../data/CUB//CUB_200_2011_proposed_seen_val_split.json",
+	"preprocess_fn": "vgg_preprocessing",
+	"model_class": "vgg",
+	"model_name": "vgg_16",
+	"image_size": "224",
+	"num_workers": "64",
+	"batch_size": "64",
+	"scope": "vgg_arg_scope",
+	"bypass_name": "None",
+    "orig_ckpt_path": "../ckpt/vgg_16.ckpt",
+    "ckpt_path": "../ckpt/CUB/CUB_vgg_16_cnn_seen_finetune_proposed/-25503",
+	"layer_name": "vgg_16/conv5/conv5_3",
+	"save_path": "../alphas/CUB/CUB_vgg16_finetuned_train_150_cnn_trainval_alphas_conv5_3"
+}
